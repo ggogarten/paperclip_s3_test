@@ -4,8 +4,11 @@ source 'https://rubygems.org'
 
 gem 'aws-sdk','< 2'
 gem 'paperclip'
+gem 'httparty'
+gem 'json'
+gem 'twilio-ruby'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails', :groups => [:development, :production, :test]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
