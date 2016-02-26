@@ -7,6 +7,7 @@ gem 'paperclip'
 gem 'httparty'
 gem 'json'
 gem 'twilio-ruby'
+gem 'rails_12factor'
 
 gem 'dotenv-rails', :groups => [:development, :production, :test]
 
