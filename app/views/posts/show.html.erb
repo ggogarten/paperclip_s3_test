@@ -7,6 +7,6 @@
 
 	<%= image_tag @post.image.url(:large), :class => "image_show" %><br>
 
-	<%= link_to "Delete", @post, :method => :delete %> / <%= link_to "Edit", edit_post_path(@post) %>
+	<%= link_to "Delete", @post, :method => :delete %> / <%= link_to "Edit", edit_post_path(@post) %> / <%= button_to "Enroll", "/post/#{@post.id}/enroll" %> / <%= button_to "Recognize", "/post/#{@post.id}/recognize" %>
 
 </div>

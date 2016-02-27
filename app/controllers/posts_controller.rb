@@ -41,10 +41,21 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
-  # def enroll
-  #   @post.link
-  #   self.enroll()
-  # end
+  def enroll
+    url = @post.image.url
+    Post.enroll(url)
+    render :show
+  end
+
+  def recognize
+    url = @post.image.url
+    successtest = Post.recognize(url)
+    if successtest == "success"
+      render :great_success
+    else
+      render :great_fail
+    end
+  end
 
   private
 
